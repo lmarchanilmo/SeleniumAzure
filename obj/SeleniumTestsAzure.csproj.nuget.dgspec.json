@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/luis.marchani/SeleniumAzure/SeleniumTestsAzure/SeleniumTestsAzure.csproj": {}
+    "/Users/luis.marchani/SeleniumAzure/SeleniumTestsAzure.csproj": {}
   },
   "projects": {
-    "/Users/luis.marchani/SeleniumAzure/SeleniumTestsAzure/SeleniumTestsAzure.csproj": {
+    "/Users/luis.marchani/SeleniumAzure/SeleniumTestsAzure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/luis.marchani/SeleniumAzure/SeleniumTestsAzure/SeleniumTestsAzure.csproj",
+        "projectUniqueName": "/Users/luis.marchani/SeleniumAzure/SeleniumTestsAzure.csproj",
         "projectName": "SeleniumTestsAzure",
-        "projectPath": "/Users/luis.marchani/SeleniumAzure/SeleniumTestsAzure/SeleniumTestsAzure.csproj",
+        "projectPath": "/Users/luis.marchani/SeleniumAzure/SeleniumTestsAzure.csproj",
         "packagesPath": "/Users/luis.marchani/.nuget/packages/",
-        "outputPath": "/Users/luis.marchani/SeleniumAzure/SeleniumTestsAzure/obj/",
+        "outputPath": "/Users/luis.marchani/SeleniumAzure/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -41,11 +41,11 @@
           "dependencies": {
             "MSTest.TestAdapter": {
               "target": "Package",
-              "version": "[1.4.0, )"
+              "version": "[2.0.0, )"
             },
             "MSTest.TestFramework": {
               "target": "Package",
-              "version": "[1.4.0, )"
+              "version": "[2.0.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
