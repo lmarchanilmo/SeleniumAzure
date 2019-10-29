@@ -25,15 +25,24 @@ namespace SeleniumTestsAzure
         [TestCleanup]
         public void teardown()
         {
-            if(TestContext.CurrentTestOutcome != UnitTestOutcome.Passed)
+            try
             {
-                Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
-                string path = Directory.GetCurrentDirectory() + "SearchTestScreenshot.png";
-                ss.SaveAsFile(path);
-                this.TestContext.AddResultFile(path);
+                if (TestContext.CurrentTestOutcome != UnitTestOutcome.Passed)
+                {
+                    Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
+                    string path = Directory.GetCurrentDirectory() + "SearchTestScreenshot.png";
+                    ss.SaveAsFile(path);
+                    this.TestContext.AddResultFile(path);
 
-                
+
+                }
             }
+            finally
+            {
+                driver.Close();
+                driver.Quit();
+            }
+            
 
         }
     }
