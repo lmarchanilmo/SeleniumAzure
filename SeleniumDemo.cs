@@ -30,5 +30,27 @@ namespace SeleniumTestsAzure
 
             //}
         }
+
+        [DataTestMethod]
+        [DataRow("cake", "cake - Google Search")]
+        [DataRow("carrot", "carrot - Google Search111")]
+        public void SearchForCake(string criteria, string result)
+        {
+            /*var chromeOptions = new ChromeOptions();
+            chromeOptions.AddArgument("headless");
+            using(var driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), chromeOptions))
+            {*/
+            driver.Navigate().GoToUrl("http://www.google.com");
+            IWebElement query = driver.FindElement(By.Name("q"));
+            query.SendKeys(criteria);
+            query.Submit();
+
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            wait.Until(d => d.Title.StartsWith(criteria, StringComparison.OrdinalIgnoreCase));
+
+            Assert.AreEqual(driver.Title, result);
+
+            //}
+        }
     }
 }

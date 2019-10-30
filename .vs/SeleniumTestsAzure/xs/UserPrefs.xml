@@ -1,15 +1,17 @@
 ﻿<Properties StartupConfiguration="{D43E91E5-1E40-4C8F-9897-E31FB63E8196}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="BaseTest.cs">
     <Files>
-      <File FileName="SeleniumDemo.cs" Line="29" Column="70" />
-      <File FileName="BaseTest.cs" Line="10" Column="10" />
+      <File FileName="SeleniumDemo.cs" Line="36" Column="20" />
+      <File FileName="BaseTest.cs" Line="20" Column="51" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SeleniumTestsAzure" expanded="True">
             <Node name="SeleniumTestsAzure" expanded="True">
-              <Node name="Dependencies" expanded="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
               <Node name="BaseTest.cs" selected="True" />
             </Node>
           </Node>
@@ -17,15 +19,7 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="SeleniumTestsAzure" expanded="True">
-            <Node name="SeleniumTestsAzure" expanded="True">
-              <Node name="SeleniumTestsAzure" expanded="True">
-                <Node name="SeleniumDemo" expanded="True">
-                  <Node name="SearchForCheese" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="SeleniumTestsAzure" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
@@ -33,7 +27,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/luis.marchani/SeleniumAzure/BaseTest.cs" relfile="BaseTest.cs" line="33" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.SeleniumTestsAzure PreferredExecutionTarget="MonoDevelop.Default" />

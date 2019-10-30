@@ -30,7 +30,7 @@ namespace SeleniumTestsAzure
                 if (TestContext.CurrentTestOutcome != UnitTestOutcome.Passed)
                 {
                     Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
-                    string path = Directory.GetCurrentDirectory() + "SearchTestScreenshot.png";
+                    string path = Directory.GetCurrentDirectory() + TestContext.Properties["TestName"] + DateTime.Now.ToString().Trim().Replace("/","_").Replace(":","_").Replace(" ","_") + ".png";
                     ss.SaveAsFile(path);
                     this.TestContext.AddResultFile(path);
 
